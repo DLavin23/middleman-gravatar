@@ -2,6 +2,10 @@
 
 A simple method to inject Gravatar images into your Middleman site.
 
+## Status
+
+[![Gem Version](https://badge.fury.io/rb/middleman-gravatar.png)](http://badge.fury.io/rb/middleman-gravatar)
+
 ## Installation
 
 Add this line to your application's Gemfile:
