@@ -1,8 +1,6 @@
 # Middleman-Gravatar
 
-A simple method to inject Gravatar images into your Middleman site.
-
-## Status
+A simple method to inject Gravatar images into your Middleman site. 
 
 [![Gem Version](https://badge.fury.io/rb/middleman-gravatar.png)](http://badge.fury.io/rb/middleman-gravatar)
 
