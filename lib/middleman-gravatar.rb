@@ -1,6 +1,11 @@
 require "middleman-gravatar/version"
 
-class MiddlemanGravatar < ::Middleman::Extension
+class MiddlemanGravatar < Middleman::Extension
+  
+  def initialize(app, options_hash={}, &block)
+    super
+  end
+
   helpers do
     def gravatar_for(email)
       if email
@@ -14,5 +19,7 @@ class MiddlemanGravatar < ::Middleman::Extension
       end
     end
   end
+
 end
+
 ::Middleman::Extensions.register(:middleman_gravatar, MiddlemanGravatar)
