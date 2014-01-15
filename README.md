@@ -1,6 +1,6 @@
 # Middleman-Gravatar
 
-A simple and easy way to inject Gravatar images into your Middleman site.
+A simple method to inject Gravatar images into your Middleman site.
 
 ## Installation
 
@@ -18,21 +18,15 @@ Or install it yourself as:
 
 ## Usage
 
-Just include the source of the email address for the gravatar in the `gravatar_for()` helper
+This gem generates the **url** to use for the image source. To generate the image just pass the email address for the Gravatar into the `gravatar_for()` helper like this
 
-    <%= image_tag(gravatar_for('your@email.com')) %>
+    <%= image_tag(gravatar_for('your@email.com')) %> 
 
-If you want to use email addresses as variables in Middleman you can do that too. 
+or like this
 
-Example: To show an authors' Gravatars beside their blog posts, add a flag to the article frontmatter like this 
+    <img src="<%= gravatar_for('your@email.com') %>" />
 
-    ---
-    gravatar: author@gmail.com
-    ---
-
-and then simply call it in the template
-
-    <%= image_tag(gravatar_for(article.data.gravatar)) %>
+If you want to use email addresses as variables in Middleman can replace `'your@email.com'` with the variable (e.g. `gravatar_for(article.data.gravatar)`)
 
 ## Contributing
 
