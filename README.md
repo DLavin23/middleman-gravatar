@@ -18,9 +18,21 @@ Or install it yourself as:
 
 ## Usage
 
-Just include the source of the email address for you gravatar in the `gravatar_for()` helper
+Just include the source of the email address for the gravatar in the `gravatar_for()` helper
 
-    <%= image_tag(gravatar_for(*your@email.com*)) %>
+    <%= image_tag(gravatar_for('your@email.com')) %>
+
+If you want to use email addresses as variables in Middleman you can do that too. 
+
+Example: To show an authors' Gravatars beside their blog posts, add a flag to the article frontmatter like this 
+
+    ---
+    gravatar: author@gmail.com
+    ---
+
+and then simply call it in the template
+
+    <%= image_tag(gravatar_for(article.data.gravatar)) %>
 
 ## Contributing
 
