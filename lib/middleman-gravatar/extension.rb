@@ -1,5 +1,3 @@
-require "middleman-core"
-
 class MiddlemanGravatar < Middleman::Extension
   def initialize(app, options_hash={}, &block)
     super
