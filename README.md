@@ -26,7 +26,7 @@ or like this
 
     <img src="<%= gravatar_for('your@email.com') %>" />
 
-If you want to use email addresses as variables in Middleman can replace `'your@email.com'` with the variable (e.g. `gravatar_for(article.data.gravatar)`)
+If you want to use email addresses as variables in Middleman you can replace `'your@email.com'` with the variable (e.g. `gravatar_for(article.data.gravatar)`)
 
 ## Contributing
 
